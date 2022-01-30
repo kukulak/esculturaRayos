@@ -1,0 +1,272 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+    font-family: 'Mulish', sans-serif;
+    /* background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(0,0,0,1) 30%, rgb(18 18 18) 64%, rgb(34 34 34) 100%); */
+    /* height: 100vh; */
+}
+
+
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: -1;
+}
+
+.fullContainer{
+    z-index: 2;
+    overflow: auto;
+    display: grid;
+
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 10% 90%;  
+    
+    justify-content: center;
+    justify-items: center;
+    /* align-items: center;
+    align-content: center; */
+}
+.head{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
+    display: grid;
+    flex-flow: row;
+    width: 98vw;
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+}
+.hamburgerMenu{
+    /* padding: 100px; */
+    grid-row: 1;
+}
+
+.hamline{
+    width: 50px;
+    height: 5px;
+    margin: 7px 0;
+    background-color: white;
+    border-radius: 10px 1px;
+}
+
+.hamline.mid{
+    width: 40px;
+}
+
+
+.close{
+    padding: 100px;
+    grid-row: 1;
+    justify-self: end;
+    display: grid;
+}
+
+.closeLine{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    grid-area: none;
+}
+.c1{
+    transform: rotate(45deg); 
+}
+.c2{
+    transform: rotate(-45deg);
+}
+
+.containerLogo{
+    display: grid;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    user-select: none;
+    pointer-events: none;
+}
+
+.logoNombre{
+    color: white;
+    font-family: 'Cherish', cursive;;
+    grid-row-end: 56;
+    font-size: 83px;
+}
+
+#clic{
+    /* user-select: all; */
+    pointer-events: all;
+    cursor: pointer;
+}
+
+
+
+/* PROJECTS */
+
+
+
+
+.projects{
+    display: grid;
+    grid-auto-flow: column;
+    height: 87vh;
+    align-items: center;
+    justify-items: end;
+    color: white;
+}
+
+.caso{
+    position: absolute;
+    font-size: 150px;
+    transform: rotate(-90deg);
+    margin: 0 0px 0px -150px;
+    justify-self: left;
+    align-self: end;
+    color: #33333357;
+}
+
+.intro{
+    padding: 0 100px;
+    display: grid;
+    grid-auto-flow: row;
+    height: 87vh;
+    align-items: center;
+    justify-items: end;
+}
+.titleProject{
+    font-size: 70px;
+    align-self: end;
+}
+
+.description{
+    align-self: start;
+    width: 61%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.p1{
+
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+}
+
+.txtUno{
+    width: 60%;
+    padding: 0 100px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+#contenedorImages{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 70px;
+    align-items: center;
+}
+
+img{
+    max-height: 80vh;
+}
+
+/* form
+ */
+
+
+ .formOptions{
+    border-radius: 6px;
+    display: grid;
+    width: 20%;
+    height: 65%;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    justify-self: start;
+    background: rgb(42 38 38 / 16%);
+    /* height: 50%; */
+ }
+
+ .info input{
+    border: none;
+    width: 90%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 3px 2px 3px 10px;
+    font-size:  20px;
+ }
+
+ .contenedorForm{
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+ }
+
+ .opciones legend{
+    border: none;
+    
+ }
+
+ abbr{
+     text-decoration: none;
+ }
+
+ .opciones{
+    border: none;
+    margin-top: 20px;
+ }
+
+ .info{
+    margin-top: 20px;
+
+ }
+
+ #btnCrear{
+    padding: 12px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    background-color: #383838;
+    width: 85%;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+ }
+
+ input[type=button], input[type=submit], input[type=reset] {
+    background-color: #222222;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.familia{
+    display: none;
+}
+
+.pareja{
+    display: none;
+}
+
+.individual{
+    /* display: none; */
+}

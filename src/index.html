@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuartelDinamita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherish&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<script src="https://rawgithub.com/mrdoob/three.js/r104/examples/js/utils/BufferGeometryUtils.js"></script>
+
+</head>
+<body>
+    <section class="fullContainer">
+
+   
+    <section class="head">
+
+        <div class='hamburgerMenu'>
+            <div class="hamline">
+            </div>
+            <div class="hamline mid">
+            </div>
+            <div class="hamline">
+            </div>
+        </div>
+        <div id='close' class='close'>
+            <div class="closeLine c1">
+                
+            </div>
+            <div class="closeLine c2">
+                
+            </div>
+        </div>
+      
+    </section>
+
+
+    <section class="formOptions">
+        <div class="contenedorForm">
+
+            <form>
+                <fieldset class="opciones">
+                  <legend>A quien quieres representar</legend>
+                  <p>
+                    <input type="radio" name="size" id="size_1" value="small" checked>
+                    <label for="size_1">Individual</label>
+                  </p>
+                  <p>
+                    <input type="radio" name="size" id="size_2" value="medium">
+                    <label for="size_2">Pareja</label>
+                  </p>
+                  <p>
+                    <input type="radio" name="size" id="size_3" value="large">
+                    <label for="size_3">Familia</label>
+                  </p>
+                </fieldset>
+             
+
+            <div class="info individual">
+                <div>
+                <label for="username">Nombre:
+                    <abbr title="required" aria-label="required">*</abbr>
+                </label>
+                <input type="text" id="nombre"  name="username" value="">
+
+                </div>
+
+                <div>
+                     <label for="paterno">Apellido Paterno:
+                     <abbr title="required" aria-label="required">*</abbr>
+                    </label>
+                <input type="text" id="paterno" name="paterno" value="">
+                </div>
+
+                <div>
+                <label for="materno">Apellido Materno: <abbr title="required" aria-label="required">*</abbr></label>
+                <input type="text" id="materno" name="materno" value="">
+                </div>
+
+                <div>
+                    <label for="nacimiento">Fecha de Nacimiento: <abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="nacimiento" name="nacimiento" value="">
+                </div>
+                  
+            </div>
+
+<!-- 
+            <div class="info individual">
+                <div>
+                <label for="username">Nombre:
+                    <abbr title="required" aria-label="required">*</abbr>
+                </label>
+                <input type="text" id="username"  name="username" value="daniela">
+
+                </div>
+
+                <div>
+                     <label for="paterno">Apellido Paterno:
+                     <abbr title="required" aria-label="required">*</abbr>
+                    </label>
+                <input type="text" id="paterno" name="paterno" value="kelly">
+                </div>
+
+                <div>
+                <label for="materno">Apellido Materno: <abbr title="required" aria-label="required">*</abbr></label>
+                <input type="text" id="materno" name="materno" value="isunza">
+                </div>
+
+                <div>
+                    <label for="nacimiento">Fecha de Nacimiento: <abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="nacimiento" name="nacimiento" value="26101986">
+                </div>
+                  
+            </div> -->
+
+
+
+
+            <div class="info pareja">
+                <div>
+                <label for="username">Nombre Completo:
+                    <abbr title="required" aria-label="required">*</abbr>
+                </label>
+                <input type="text" id="username"  name="username">
+
+                </div>
+
+                <div>
+                     <label for="paterno">Nombre Completo:
+                     <abbr title="required" aria-label="required">*</abbr>
+                    </label>
+                <input type="text" id="paterno" name="paterno">
+                </div>
+
+                <div>
+                <label for="materno">Apodo: <abbr title="required" aria-label="required">*</abbr></label>
+                <input type="text" id="materno" name="materno">
+                </div>
+
+                <div>
+                    <label for="nacimiento">Fecha de Nacimiento: <abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="nacimiento" name="nacimiento">
+                </div>
+
+
+                <div>
+                    <label for="nacimiento">Fecha de Nacimiento: <abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="nacimiento2" name="nacimiento">
+                </div>
+                  
+            </div>
+
+            <div class="info familia">
+                <div>
+                <label for="username">Nombre :
+                    <abbr title="required" aria-label="required">*</abbr>
+                </label>
+                <input type="text" id="nombre"  name="username">
+
+                </div>
+
+                <div>
+                     <label for="paterno">Nombre:
+                     <abbr title="required" aria-label="required">*</abbr>
+                    </label>
+                <input type="text" id="nombre2" name="paterno">
+                </div>
+
+                <div>
+                    <label for="paterno">Nombre:
+                    <abbr title="required" aria-label="required">*</abbr>
+                   </label>
+               <input type="text" id="nombre3" name="paterno">
+               </div>
+
+                <div>
+                <label for="materno">Apellidos de la familia: <abbr title="required" aria-label="required">*</abbr></label>
+                <input type="text" id="materno" name="materno">
+                </div>
+
+                <div>
+                    <label for="nacimiento">Fecha de Nacimiento: <abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="nacimiento" name="nacimiento">
+                </div>
+                <div>
+                    <label for="nacimiento">Fecha de Nacimiento: <abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="nacimiento1" name="nacimiento">
+                </div>     <div>
+                    <label for="nacimiento">Fecha de Nacimiento: <abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="nacimiento2" name="nacimiento">
+                </div>
+            </div>
+
+            <!-- <input id="btnCrear" type="submit" value="Crear"> -->
+
+        </form>
+
+        <div id="btnCrear">
+            CREAR
+            </div>
+
+           
+        </div>
+    </section>
+
+
+    <section class="containerLogo">
+
+        <div id='clic' class="logoNombre">
+            Escultura Rayos
+        </div>
+
+        <footer>
+
+        </footer>
+
+    </section>
+
+</section>
+    <canvas class="webgl"></canvas>
+</body>
+</html>
